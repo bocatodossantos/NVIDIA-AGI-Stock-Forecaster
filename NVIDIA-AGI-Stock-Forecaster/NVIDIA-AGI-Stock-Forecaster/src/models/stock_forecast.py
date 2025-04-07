@@ -21,7 +21,6 @@ from ..utils.config import load_config
 # Set up logging
 logger = logging.getLogger(__name__)
 
-
 class NvidiaStockForecast:
     """
     A forecasting model for NVIDIA stock that incorporates AGI timeline

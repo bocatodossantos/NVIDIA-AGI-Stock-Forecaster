@@ -1,0 +1,79 @@
+# NVIDIA AGI Stock Forecaster Model Parameters
+
+# Stock forecasting model parameters
+model_params:
+  # Random Forest parameters
+  n_estimators: 100          # Number of trees in the forest
+  max_depth: null            # Maximum depth of trees (null for unlimited)
+  min_samples_split: 2       # Minimum samples required to split a node
+  min_samples_leaf: 1        # Minimum samples required at a leaf node
+  bootstrap: true            # Whether to use bootstrap samples
+  random_state: 42           # Random seed for reproducibility
+  
+  # Training parameters
+  test_size: 0.2             # Proportion of data to use for testing
+  use_cross_validation: true # Whether to use cross-validation
+  cv_folds: 5                # Number of cross-validation folds
+  
+  # Feature parameters
+  lag_periods: [1, 5, 10, 21, 63]  # Days for lagged features
+  momentum_periods: [5, 21, 63, 126, 252]  # Days for momentum features
+
+# AGI probability model parameters
+agi_model_params:
+  # Distribution weights
+  expert_survey_weight: 0.5        # Weight for expert survey distribution
+  compute_trajectory_weight: 0.5   # Weight for compute trajectory distribution
+  
+  # Scaling law parameters
+  compute_current: 1.0e26          # Current AI training compute in FLOP
+  compute_agi_estimate: 1.0e30     # Estimated compute for AGI in FLOP
+  compute_growth_rate: 1.3         # Annual multiplier in compute 
+  
+  # Stock impact parameters
+  economic_impact_threshold: 0.5   # Threshold for economic impact
+  impact_lag_years: 2              # Years of lag before AGI affects prices
+  impact_duration_years: 5         # Years over which the impact is spread
+  
+  # Expert survey data - can be overridden
+  expert_surveys:
+    - source: "AI Impacts 2022"
+      median_year: 2045
+      ci_low: 2035
+      ci_high: 2065
+    - source: "Grace et al. 2020"
+      median_year: 2050
+      ci_low: 2036
+      ci_high: 2075
+    - source: "Zhang et al. 2022"
+      median_year: 2040
+      ci_low: 2030
+      ci_high: 2060
+    - source: "Metaculus Community"
+      median_year: 2035
+      ci_low: 2028
+      ci_high: 2055
+    - source: "AI Leaders Survey"
+      median_year: 2032
+      ci_low: 2027
+      ci_high: 2045
+    - source: "ML Researchers"
+      median_year: 2039
+      ci_low: 2029
+      ci_high: 2058
+
+# Data configuration
+data_config:
+  ticker: "NVDA"               # Stock ticker symbol
+  years_of_history: 5          # Years of historical data to use
+  data_cache_dir: "data/raw"   # Directory to cache raw data
+  results_dir: "results"       # Directory to save results
+  model_save_dir: "data/models" # Directory to save trained models
+
+# Claude API configuration (empty, should be set in api_config.yaml)
+anthropic_api_key: null
+anthropic_model: null
+
+# System settings
+log_level: "INFO"           # Logging level
+use_cache: true             # Whether to use cached data

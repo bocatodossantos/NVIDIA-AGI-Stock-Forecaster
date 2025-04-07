@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6c43a7c6-a5bd-41be-8209-f9f5c276bbd7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\stock_forecast.py</StartupFile>
+    <StartupFile>src\models\stock_forecast.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,17 +21,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="src\claude_client.py" />
-    <Compile Include="scripts\module1.py">
+    <Compile Include="src\data\stock_data.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="src\stock_forecast.py" />
-    <Compile Include="src\agy_probability.py" />
+    <Compile Include="src\anthropic\claude_client.py" />
+    <Compile Include="scripts\generate_forecast.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\models\stock_forecast.py" />
+    <Compile Include="src\models\agi_probability.py" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="config\" />
+    <Folder Include="src\config\" />
+    <Folder Include="src\data\" />
+    <Folder Include="src\models\" />
+    <Folder Include="src\anthropic\" />
     <Folder Include="src\" />
     <Folder Include="scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\config\api_config.yaml.example.yaml" />
+    <Content Include="src\config\model_params.yaml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

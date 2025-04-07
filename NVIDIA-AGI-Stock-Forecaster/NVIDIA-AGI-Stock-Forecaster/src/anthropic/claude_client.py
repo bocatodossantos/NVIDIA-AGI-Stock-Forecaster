@@ -13,7 +13,6 @@ from typing import Dict, Any, Optional
 
 logger = logging.getLogger(__name__)
 
-
 class AnthropicClient:
     """Simple client for calling Anthropic Claude API"""
     
