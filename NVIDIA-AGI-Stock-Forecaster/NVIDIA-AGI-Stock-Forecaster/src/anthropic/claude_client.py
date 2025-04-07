@@ -16,7 +16,7 @@ logger = logging.getLogger(__name__)
 class AnthropicClient:
     """Simple client for calling Anthropic Claude API"""
     
-    def __init__(self, api_key: str, model: str = "claude-3-sonnet-20240229"):
+    def __init__(self, api_key: str, model: str = "claude-3-7-sonnet-20250219"):
         """
         Initialize the Anthropic client.exit
         
