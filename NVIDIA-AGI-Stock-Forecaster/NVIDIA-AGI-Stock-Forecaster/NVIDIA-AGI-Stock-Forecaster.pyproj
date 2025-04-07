@@ -40,7 +40,6 @@
     <Folder Include="scripts\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="src\config\api_config.yaml.example.yaml" />
     <Content Include="src\config\model_params.yaml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
