@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\",
+  "WorkspaceRootPath": "D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6C43A7C6-A5BD-41BE-8209-F9F5C276BBD7}|NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster.pyproj|D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA_AGI_Stock_Forecaster.py||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{6C43A7C6-A5BD-41BE-8209-F9F5C276BBD7}|NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster.pyproj|solutionrelative:NVIDIA-AGI-Stock-Forecaster\\NVIDIA_AGI_Stock_Forecaster.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{6C43A7C6-A5BD-41BE-8209-F9F5C276BBD7}|NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster.pyproj|D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\claude_client.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6C43A7C6-A5BD-41BE-8209-F9F5C276BBD7}|NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster.pyproj|solutionrelative:NVIDIA-AGI-Stock-Forecaster\\claude_client.py||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +14,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "NVIDIA_AGI_Stock_Forecaster.py",
-              "DocumentMoniker": "D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA_AGI_Stock_Forecaster.py",
-              "RelativeDocumentMoniker": "NVIDIA-AGI-Stock-Forecaster\\NVIDIA_AGI_Stock_Forecaster.py",
-              "ToolTip": "D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA_AGI_Stock_Forecaster.py",
-              "RelativeToolTip": "NVIDIA-AGI-Stock-Forecaster\\NVIDIA_AGI_Stock_Forecaster.py",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "claude_client.py",
+              "DocumentMoniker": "D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\claude_client.py",
+              "RelativeDocumentMoniker": "NVIDIA-AGI-Stock-Forecaster\\claude_client.py",
+              "ToolTip": "D:\\Projetos\\VisualStudio\\source\\repos\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\NVIDIA-AGI-Stock-Forecaster\\claude_client.py",
+              "RelativeToolTip": "NVIDIA-AGI-Stock-Forecaster\\claude_client.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
-              "WhenOpened": "2025-04-07T17:36:27.713Z",
+              "WhenOpened": "2025-04-07T18:05:04.731Z",
               "EditorCaption": ""
             }
           ]
