@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6c43a7c6-a5bd-41be-8209-f9f5c276bbd7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>stock_forecast.py</StartupFile>
+    <StartupFile>src\stock_forecast.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,9 +21,17 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="claude_client.py" />
-    <Compile Include="stock_forecast.py" />
-    <Compile Include="agy_probability.py" />
+    <Compile Include="src\claude_client.py" />
+    <Compile Include="scripts\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="src\stock_forecast.py" />
+    <Compile Include="src\agy_probability.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config\" />
+    <Folder Include="src\" />
+    <Folder Include="scripts\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

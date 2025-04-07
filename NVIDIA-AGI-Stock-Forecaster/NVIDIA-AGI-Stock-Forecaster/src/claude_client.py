@@ -19,7 +19,7 @@ class AnthropicClient:
     
     def __init__(self, api_key: str, model: str = "claude-3-sonnet-20240229"):
         """
-        Initialize the Anthropic client.
+        Initialize the Anthropic client.exit
         
         Args:
             api_key (str): Your Anthropic API key
