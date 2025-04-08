@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6c43a7c6-a5bd-41be-8209-f9f5c276bbd7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>src\models\stock_forecast.py</StartupFile>
+    <StartupFile>scripts\generate_forecast.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>NVIDIA-AGI-Stock-Forecaster</Name>
     <RootNamespace>NVIDIA-AGI-Stock-Forecaster</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,16 +31,25 @@
     </Compile>
     <Compile Include="src\models\stock_forecast.py" />
     <Compile Include="src\models\agi_probability.py" />
+    <Compile Include="src\utils\config.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="data\raw\" />
+    <Folder Include="docs\" />
+    <Folder Include="data\" />
     <Folder Include="src\config\" />
     <Folder Include="src\data\" />
     <Folder Include="src\models\" />
     <Folder Include="src\anthropic\" />
     <Folder Include="src\" />
     <Folder Include="scripts\" />
+    <Folder Include="src\utils\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="data\raw\NVDA_sample.csv" />
+    <Content Include="docs\methodology.md" />
     <Content Include="src\config\model_params.yaml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

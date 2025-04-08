@@ -469,13 +469,3 @@ if __name__ == "__main__":
     model.plot_distributions()
     model.plot_cumulative_probability()
     
-    import matplotlib.pyplot as plt
-    plt.show() paragraphs.
-            """,
-            
-            "agi_timeline": """
-            Based solely on published research and expert surveys, what are the current 
-            predictions for AGI timeline? Provide a balanced view including both conservative
-            and accelerated timeline estimates. Include key factors that might affect these
-            timelines. Do not speculate beyond what's in the scientific literature.
-            Limit your response to 3-4

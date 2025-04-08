@@ -223,8 +223,8 @@ class NvidiaStockForecast:
         # Evaluate model
         train_score = model.score(X_train, y_train)
         test_score = model.score(X_test, y_test)
-        logger.info(f"Model R² on training data: {train_score:.4f}")
-        logger.info(f"Model R² on testing data: {test_score:.4f}")
+        logger.info(f"Model R2 on training data: {train_score:.4f}")
+        logger.info(f"Model R2 on testing data: {test_score:.4f}")
         
         # Feature importance
         feature_importance = pd.DataFrame({

@@ -315,12 +315,12 @@ def generate_report(summary, ai_analysis, output_dir):
         <h2>Model Performance</h2>
         <div class="metrics">
             <div class="metric-card">
-                <div class="metric-name">Training Score (R²)</div>
+                <div class="metric-name">Training Score (R2)</div>
                 <div class="metric-value">{summary['train_score']:.4f}</div>
             </div>
             
             <div class="metric-card">
-                <div class="metric-name">Testing Score (R²)</div>
+                <div class="metric-name">Testing Score (R2)</div>
                 <div class="metric-value">{summary['test_score']:.4f}</div>
             </div>
         </div>
