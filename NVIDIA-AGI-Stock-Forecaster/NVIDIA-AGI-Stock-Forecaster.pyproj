@@ -12,6 +12,9 @@
     <Name>NVIDIA-AGI-Stock-Forecaster</Name>
     <RootNamespace>NVIDIA-AGI-Stock-Forecaster</RootNamespace>
     <IsWindowsApplication>False</IsWindowsApplication>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>--config "D:\Projetos\VisualStudio\source\repos\NVIDIA-AGI-Stock-Forecaster\NVIDIA-AGI-Stock-Forecaster\NVIDIA-AGI-Stock-Forecaster\src\config\model_params.yaml" --days 365 --output-dir "D:\Projetos\VisualStudio\source\repos\NVIDIA-AGI-Stock-Forecaster\NVIDIA-AGI-Stock-Forecaster\NVIDIA-AGI-Stock-Forecaster\results"</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
